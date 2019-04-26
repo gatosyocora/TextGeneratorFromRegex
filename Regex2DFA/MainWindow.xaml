@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Label Content="WordGeneratorFromRegex" HorizontalAlignment="Left" Margin="183,30,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="RegexTextBox" HorizontalAlignment="Left" Height="23" Margin="158,112,0,0" TextWrapping="Wrap" Text="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=RegexText}" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" />
+        <Button Content="Show" HorizontalAlignment="Left" Margin="312,115,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBox x:Name ="ResultTextBox" HorizontalAlignment="Left" Height="23" Margin="158,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>
